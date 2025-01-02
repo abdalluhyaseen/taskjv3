@@ -76,7 +76,20 @@ document.write(factorial);
 document.writeln("<br>");
 // #############################################
 // task 13
+for (let n = 2; n < 20; n++) {
+  let Prime = true;
+  for (let i = 2; i < n; i++) {
+    if (n % i === 0) {
+      Prime = false;
+      break;
+    }
+  }
 
+  if (Prime) {
+    document.writeln(n);
+  }
+}
+document.writeln("<br>");
 
 // #############################################
 // task 14
