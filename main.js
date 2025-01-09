@@ -76,20 +76,6 @@ document.write(factorial);
 document.writeln("<br>");
 // #############################################
 // task 13
-for (let n = 2; n < 20; n++) {
-  let Prime = true;
-  for (let i = 2; i < n; i++) {
-    if (n % i === 0) {
-      Prime = false;
-      break;
-    }
-  }
-
-  if (Prime) {
-    document.writeln(n);
-  }
-}
-document.writeln("<br>");
 
 // #############################################
 // task 14
@@ -107,18 +93,18 @@ for (let i = 1; i <= 5; i += 2) {
 document.writeln("<br>");
 // #############################################
 // task 16
-let s =[1,2,3,4,5];
-for(let i=5;i>0; i--) {
-    document.writeln(i);
-  }
+let s = [1, 2, 3, 4, 5];
+for (let i = s.length - 1; i > 0; i--) {
+  document.writeln(i);
+}
 document.writeln("<br>");
 // #############################################
 // task 17
 let f = 3;
 let c = 8;
-let n = [3, 4, 5, 6, 7 ,8];
+let n = [3, 4, 5, 6, 7, 8];
 for (let i = 0; i < n.length; i++) {
-  if (i>=f && i<c) {
+  if (i >= f && i < c) {
     document.writeln(i);
   }
 }
@@ -127,23 +113,23 @@ document.writeln("<br>");
 // task 18
 
 let num2 = 4;
+arr = [1, 2, 3, 6, 5, 9, 9, 8, 4, 5];
 for (let i = 1; i <= 5; i++) {
-  if (num2 == i) {
+  if (num2 == arr[i]) {
     document.write(true);
-   
   }
 }
 document.writeln("<br>");
 
 // #############################################
 // task 19
-let num3 = [1,2,1,3,2,1];
+let num3 = [1, 2, 1, 3, 2, 1];
 let frequency = 0;
- for (let i = 0; i < num3.length; i++) {
-   if (num3[i] == 1) {
-     frequency++;
-   }
- }
+for (let i = 0; i < num3.length; i++) {
+  if (num3[i] == 1) {
+    frequency++;
+  }
+}
 document.write(frequency);
 document.writeln("<br>");
 // #############################################
@@ -151,7 +137,7 @@ document.writeln("<br>");
 let ba = 1;
 let ab = 0;
 sum = 0;
-for (let i = 2; i <9; i++) {
+for (let i = 2; i < 9; i++) {
   document.writeln(ab);
   sum = ab + ba;
   ab = ba;
